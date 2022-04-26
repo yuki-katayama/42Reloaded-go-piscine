@@ -7,11 +7,11 @@ func Atoi(s string) int {
 	runes := []rune(s)
 	var res int = 0
 	for i, r := range runes {
-		res += int(r - '0');
-		if (i == len(runes) - 1) {
-			break ;
+		res += int(r - '0')
+		if i == len(runes)-1 {
+			break
 		}
-		res *= 10;
+		res *= 10
 	}
-	return (res);
+	return (res)
 }
