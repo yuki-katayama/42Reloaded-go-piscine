@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	piscine.PrintDigits();
+	piscine.PrintDigits()
 }
