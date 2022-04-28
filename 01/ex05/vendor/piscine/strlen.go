@@ -1,5 +1,9 @@
 package piscine
 
 func StrLen(s string) int {
-	return len(s)
+	len := 0;
+	for range s {
+		len++;
+	}
+	return len;
 }

@@ -1,6 +1,14 @@
 package piscine
 
-func Atoi(s string) int {
+func StrLen(s []rune) int {
+	len := 0;
+	for range s {
+		len++;
+	}
+	return len;
+}
+
+func BasicAtoi(s string) int {
 	if s == "" {
 		return 0
 	}
@@ -8,7 +16,7 @@ func Atoi(s string) int {
 	var res int = 0
 	for i, r := range runes {
 		res += int(r - '0')
-		if i == len(runes)-1 {
+		if i == StrLen(runes)-1 {
 			break
 		}
 		res *= 10
