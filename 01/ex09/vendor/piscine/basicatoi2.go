@@ -1,13 +1,12 @@
 package piscine
 
 func StrLen(s []rune) int {
-	len := 0;
+	len := 0
 	for range s {
-		len++;
+		len++
 	}
-	return len;
+	return len
 }
-
 
 func BasicAtoi2(s string) int {
 	if s == "" {
